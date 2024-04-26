@@ -4,8 +4,6 @@ from movies.models import Movie
 from genres.models import Genre
 from genres.serializers import GenreSerializer
 from actors.serializer import ActorSerializer
-from actors.models import Actor
-
 
 
 class MovieSerializer(serializers.Serializer):
@@ -22,7 +20,7 @@ class MovieSerializer(serializers.Serializer):
     resume = serializers.CharField()
 
 
-class MovieSerialazer(serializers.ModelSerializer):
+class MovieSerializer(serializers.ModelSerializer):
     
     
     class Meta:
